@@ -1,0 +1,15 @@
+﻿$def with(names)
+
+<ul>
+$for name in names:
+	<li id="$name.uid">$name.uname</li>
+
+
+</ul>
+
+<form method="post" action="add">
+<p><input type="text" name="uname" /><br />
+ <input type="text" name="passw" /> 
+<input type="submit" value="Add" /></p>
+</form>
+
